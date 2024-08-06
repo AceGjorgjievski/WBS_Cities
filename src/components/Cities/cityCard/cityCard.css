@@ -1,0 +1,59 @@
+.row {
+    border: 2px solid cyan;
+}
+
+.city-card-container {
+    background-color: white;
+    padding: 20px; /* Add padding if needed */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    opacity: 0; /* Start with transparency */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.city-card-container.fade-in {
+    opacity: 1; /* Fade in */
+}
+
+.city-card-container.fade-out {
+    opacity: 0; /* Fade out */
+}
+
+.info-text-container {
+    opacity: 0; /* Start with transparency */
+    transition: opacity 1s; /* Apply transition for fade effect */
+    text-align: center; /* Center align the text */
+    padding: 10px; /* Add padding if needed */
+}
+
+.info-text-container.fade-in {
+    opacity: 1; /* Fade in */
+}
+
+.info-text-container.fade-out {
+    opacity: 0; /* Fade out */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.info-text {
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make font thicker */
+    font-size: 32px; /* Make font size larger */
+    font-family: 'Impact', sans-serif; /* Use Impact font */
+}
+
+.col {
+    border: 2px solid black;
+}
