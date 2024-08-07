@@ -12,7 +12,7 @@ const CityNotFound = ({cityData}) => {
         return () => {
             setIsVisible(false);
         };
-    }, [cityData.cityLabel.value]);
+    }, [cityData?.cityLabel?.value]);
 
     return (
         <>
@@ -31,8 +31,8 @@ const CityNotFound = ({cityData}) => {
                         - check spelling
                     </div>
                     <div>
-                        - The data in DBpedia or other resources is not written
-                        or does not have data about it.
+                        - DBpedia or other resources does not have data about it
+                        or it is written differently
                     </div>
                 </Row>
             </Container>
